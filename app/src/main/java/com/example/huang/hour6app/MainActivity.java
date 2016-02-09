@@ -14,7 +14,6 @@ import android.widget.TextView;
 import android.widget.RadioButton;
 import android.widget.Toast;
 import android.content.Context;
-import android.widget.CheckBox;
 import android.widget.ToggleButton;
 
 
