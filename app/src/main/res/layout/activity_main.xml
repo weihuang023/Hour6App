@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.huang.hour6app.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <TextView
         android:layout_width="wrap_content"
@@ -32,45 +32,105 @@
         android:labelFor="@+id/editText2"/>
 
     <LinearLayout
-        android:id="@+id/linear_layout"
+        android:id="@+id/linear_layout_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal" >
 
-    <Button
+    <Button style="?android:attr/button"
         android:layout_width="0dip"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:text="@string/send"
         android:id="@+id/button" />
 
-    <Button
+    <Button style="?android:attr/button"
         android:layout_width="0dip"
         android:layout_weight="1"
         android:layout_height="wrap_content"
         android:text="@string/reset"
         android:id="@+id/button2" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/small"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="@string/median"
+            android:onClick="onRadioButtonClicked"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/big"
+            android:checked="false"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <CheckBox android:id="@+id/checkbox_meat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meat"
+            android:onClick="onCheckboxClicked"
+            android:checked="false" />
+
+        <CheckBox android:id="@+id/checkbox_cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cheese"
+            android:onClick="onCheckboxClicked"
+            android:checked="false" />
+
+        <CheckBox android:id="@+id/checkbox_vegetable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vegetable"
+            android:onClick="onCheckboxClicked"
+            android:checked="false" />
+
+        <CheckBox android:id="@+id/checkbox_fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fruit"
+            android:onClick="onCheckboxClicked"
+            android:checked="false" />
 
     </LinearLayout>
 
-    <RadioButton
-        android:layout_width="wrap_content"
+    <ToggleButton
+        android:id="@+id/toggleButton"
         android:layout_height="wrap_content"
-        android:text="New RadioButton"
-        android:id="@+id/radioButton" />
+        android:layout_width="wrap_content"
+        android:textOn="@string/wifi_on"
+        android:textOff="@string/wifi_off"
+        android:onClick="onToggleClicked"
+        android:text="@string/wifi_off"
+        android:checked="false" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New CheckBox"
-        android:id="@+id/checkBox" />
-
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Switch"
-        android:id="@+id/switch1" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleHorizontal"

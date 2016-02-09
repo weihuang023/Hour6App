@@ -2,4 +2,13 @@
     <string name="app_name">Hour6App</string>
     <string name="send">Send</string>
     <string name="reset">Reset</string>
+    <string name="big">Big</string>
+    <string name="small">Small</string>
+    <string name="median">Median</string>
+    <string name="meat">Meat</string>
+    <string name="cheese">Cheese</string>
+    <string name="vegetable">VeGe</string>
+    <string name="fruit">Fruit</string>
+    <string name="wifi_on">WiFi on</string>
+    <string name="wifi_off">WiFi Off</string>
 </resources>
