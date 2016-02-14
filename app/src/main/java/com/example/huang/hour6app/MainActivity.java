@@ -16,7 +16,6 @@ import android.widget.Toast;
 import android.content.Context;
 import android.widget.ToggleButton;
 
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
